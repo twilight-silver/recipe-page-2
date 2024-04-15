@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <title>Frontend Mentor | Recipe page</title>
+    <style>
+      * {
+        font-family: "Young Serif", "Outfit";
+      }
+      .back-ground {
+        background-color: hsl(30, 54%, 90%);
+      }
+      .back {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px;
+      }
+      .head1 {
+        color: hsl(24, 5%, 18%);
+      }
+      .text1 {
+        color: hsl(30, 10%, 34%);
+        font-size: 1rem;
+        letter-spacing: 1px;
+        justify-content: center;
+        font-family: "Outfit";
+      }
+      .text2{
+        color: hsl(30, 10%, 34%);
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: "Outfit";
+        padding-left: 8px;
+      }
+      
+      .rose {
+        background-color: hsl(330, 100%, 98%);
+      }
+      .rasberry {
+        color: hsl(332, 51%, 32%);
+      }
+      .nutmeg{
+        color: hsl(14, 45%, 36%);
+      }
+      .charcoal{
+        color: hsl(24, 5%, 18%);
+      }
+      .list > li::marker {
+        color: hsl(332, 51%, 32%);
+      }
+      .list-head,
+      li {
+        color: hsl(30, 10%, 34%);
+        font-family: "Outfit";
+      }
+      .list-head {
+        font-weight: 500;
+      }
+      .Instructions > li::marker {
+          color: hsl(14, 45%, 36%);
+      }
+      .Instructions > li, .Instructions > li > span{
+        font-family: "Outfit";
+      }
+      .Instructions > li > span{
+        font-weight: 500;
+      }
+      .content > li::marker{
+           color: hsl(14, 45%, 36%);
+      }
+      .fix{
+        font-size: xx-small;
+      }
+      
+    </style>
+  </head>
+  <body class="back-ground row">
+    <div
+      class="card card-sm card-lg back mx-auto col-md-10 col-lg-6 col-12 col-sm-10 mt-5"
+     >
+      <div class="list-group list-group-flush p-2">
+        <div class="card-body card-body-lg card-body-sm container mx-auto">
+          <img
+            class=" img-fluid mx-auto my-2"
+            src="./assets/images/image-omelette.jpeg"
+            alt="omelette"
+            style="border-radius: 15px;"
+          />
+          <h1 class="head1 mt-3">Simple Omelette Recipe</h1>
+          <span class="d-block mt-3 text1"
+            >An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.</span
+          >
+          <div class="card rose container mt-4">
+            <h5 class="rasberry mt-3">Preparation time</h5>
+            <ul class="list">
+              <li>
+                <span class="list-head">Total:</span> Approximately 10 minutes
+              </li>
+              <li><span class="list-head">Preparation:</span> 5 minutes</li>
+              <li><span class="list-head">Cooking:</span> 5 minutes</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="list-group-item card-body card-body-lg card-body-sm container mx-auto"
+        >
+          <h3 class="pt-3 nutmeg">Ingredients</h3>
+          <ul class="content">
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </div>
+        <div
+          class="list-group-item card-body card-body-lg card-body-sm container mx-auto"
+         >
+          <h3 class="pt-3 nutmeg">Instructions</h3>
+          <ol class="Instructions">
+            <li class="p-1">
+              <span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and
+              pepper until they are well mixed. You can add a tablespoon of
+              water or milk for a fluffier texture.
+            </li>
+            <li class="p-1">
+              <span>Heat the pan:</span> Place a non-stick frying pan over medium heat and
+              add butter or oil.
+            </li>
+            <li class="p-1">
+              <span>Cook the omelette:</span> Once the butter is melted and bubbling, pour in
+              the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            </li>
+            <li class="p-1">
+              <span>Add fillings (optional):</span> When the eggs begin to set at the edges
+              but are still slightly runny in the middle, sprinkle your chosen
+              fillings over one half of the omelette.
+            </li>
+            <li class="p-1">
+              <span>Fold and serve:</span> As the omelette continues to cook, carefully lift
+              one edge and fold it over the fillings. Let it cook for another
+              minute, then slide it onto a plate.
+            </li>
+            <li class="p-1">
+              <span>Enjoy:</span> Serve hot, with additional salt and pepper if needed.
+            </li>
+          </ol>
+        </div>
+         <div class="list-group-item card-body card-body-lg card-body-sm container mx-auto">
+          <h3 class="nutmeg pt-3">Nutrition</h3>
+          <span class="text1">The table below shows nutritional values per serving
+            without the additional fillings.</span>
+            <table class="w-100 mt-3 ">
+              <tr>
+                <td class="text-start border-bottom mt-3 mb-3 p-2 text2">Calories</td>
+                <td class="text-start border-bottom mt-3 mb-3 p-2 nutmeg"><b style="font-family: Outfit;">277kcal</b></td>
+              </tr>
+              <tr>
+                <td class="text-start border-bottom mt-3 mb-3 p-2 text2">Carbs</td>
+                <td class="text-start border-bottom mt-3 mb-3 p-2 nutmeg"><b style="font-family: Outfit;">0g</b></td>
+              </tr>
+              <tr>
+                <td class="text-start border-bottom mt-3 mb-3 p-2 text2">Protein</td>
+                <td class="text-start border-bottom mt-3 mb-3 p-2 nutmeg"><b style="font-family: Outfit;">20g</b></td>
+              </tr>
+              <tr>
+                <td class="text-start mt-3 mb-3 p-2 text2">Fat</td>
+                <td class="text-start mt-3 mb-3 p-2 nutmeg"><b style="font-family: Outfit;">22g</b></td>
+              </tr>
+            </table>
+         </div>
+      </div>
+    </div>
+    <div class="text-center text-white text-decoration-none fix">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
